@@ -1,19 +1,19 @@
 [workspace]
 resolver = "2"
 members = [
-    "crates/ecolor",
-    "crates/egui_demo_app",
-    "crates/egui_demo_lib",
-    "crates/egui_extras",
-    "crates/egui_glow",
-    "crates/egui_plot",
-    "crates/egui-wgpu",
-    "crates/egui-winit",
-    "crates/egui",
-    "crates/emath",
-    "crates/epaint",
+  "crates/ecolor",
+  "crates/egui_demo_app",
+  "crates/egui_demo_lib",
+  "crates/egui_extras",
+  "crates/egui_glow",
+  "crates/egui_plot",
+  "crates/egui-wgpu",
+  "crates/egui-winit",
+  "crates/egui",
+  "crates/emath",
+  "crates/epaint",
 
-    "examples/*",
+  "examples/*",
 ]
 
 [profile.release]
@@ -37,4 +37,4 @@ opt-level = 2
 
 [workspace.dependencies]
 thiserror = "1.0.37"
-wgpu = "0.17.0"
+wgpu = { version = "0.17.0", features = ["webgl"] }
